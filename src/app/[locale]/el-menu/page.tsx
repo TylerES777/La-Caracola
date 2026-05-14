@@ -66,8 +66,8 @@ export default async function MenuHubPage({
         separator="·"
       />
 
-      {/* Intro */}
-      <section className="py-24 md:py-32">
+      {/* Intro — light/cream surface so the dark editorial copy is readable */}
+      <section className="py-24 md:py-32 bg-paper text-ink">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <Reveal>
             <p className="text-[10.5px] uppercase tracking-[0.32em] text-gold-deep mb-8">
@@ -82,7 +82,7 @@ export default async function MenuHubPage({
       </section>
 
       {/* Four categories — alternating sides, magazine style */}
-      <section className="pb-24 md:pb-32">
+      <section className="pb-24 md:pb-32 bg-paper text-ink">
         <div className="mx-auto max-w-[1320px] px-6 md:px-20 space-y-20 md:space-y-28">
           {CATEGORIES.map((cat, i) => {
             const flipped = i % 2 === 1;

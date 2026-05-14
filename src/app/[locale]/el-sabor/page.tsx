@@ -66,7 +66,7 @@ export default async function ElSaborPage({
       </section>
 
       {/* Welcome — drop cap */}
-      <section className="py-28 md:py-36">
+      <section className="py-28 md:py-36 bg-paper text-ink">
         <div className="mx-auto max-w-[1100px] px-6 md:px-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           <Reveal className="lg:col-span-4">
             <Chapter numeral="I" label={t("experience.eyebrow")} />
@@ -75,7 +75,7 @@ export default async function ElSaborPage({
             <h2 className="font-display italic text-[clamp(2.25rem,4.5vw,3.5rem)] text-teal-deep leading-[1.0]">
               {t("experience.title")}
             </h2>
-            <p className="mt-10 text-lg text-ink/75 leading-relaxed drop-cap">
+            <p className="mt-10 text-lg text-ink/85 leading-relaxed drop-cap">
               {t("experience.body")}
             </p>
           </Reveal>
