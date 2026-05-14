@@ -27,12 +27,13 @@ const ROMAN: Record<CartaCategory, string> = {
 export function MenuSection({ category, dishes, showHalf, perKg }: Props) {
   const tCat = useTranslations("menu.carta.categories");
   const tNotes = useTranslations("menu.carta.notes");
+  const tD = useTranslations("display");
   const noteKey = CATEGORY_NOTES[category];
 
   return (
     <section
       id={`cat-${category}`}
-      className="scroll-mt-32 py-14 md:py-20 border-t border-ink/15 first:border-t-0 relative"
+      className="scroll-mt-32 py-14 md:py-20 border-t border-ink/45 first:border-t-0 relative"
     >
       {/* Big roman numeral watermark */}
       <span
@@ -48,8 +49,8 @@ export function MenuSection({ category, dishes, showHalf, perKg }: Props) {
             {ROMAN[category]}.
           </span>
           <div>
-            <p className="text-[10px] uppercase tracking-[0.32em] text-ink/45 mb-1.5">
-              Capítulo {ROMAN[category]}
+            <p className="text-[10px] uppercase tracking-[0.32em] text-ink/80 mb-1.5">
+              {tD("chapterNum")} {ROMAN[category]}
             </p>
             <h2 className="font-display italic text-[clamp(2rem,4vw,3rem)] text-teal-deep leading-none">
               {tCat(category)}
@@ -57,7 +58,7 @@ export function MenuSection({ category, dishes, showHalf, perKg }: Props) {
           </div>
         </div>
         {noteKey && (
-          <p className="mt-4 text-[12.5px] italic text-ink/60 max-w-xl">
+          <p className="mt-4 text-[12.5px] italic text-ink/78 max-w-xl">
             {tNotes(noteKey as never)}
           </p>
         )}

@@ -55,7 +55,7 @@ export default function VinosPage() {
           <SeashellGlyph className="h-6 w-6 text-gold-deep" />
         </div>
 
-        <nav className="flex gap-1 md:gap-4 overflow-x-auto justify-center border-b border-ink/10 mb-8 scrollbar-hide">
+        <nav className="flex gap-1 md:gap-4 overflow-x-auto justify-center border-b border-ink/35 mb-8 scrollbar-hide">
           {TABS.map((k) => (
             <button
               key={k}
@@ -64,7 +64,7 @@ export default function VinosPage() {
               className={`px-3 md:px-5 py-4 text-[11px] uppercase tracking-[0.28em] whitespace-nowrap border-b-2 -mb-px transition-colors ${
                 tab === k
                   ? "border-gold-deep text-teal-deep"
-                  : "border-transparent text-ink/55 hover:text-ink"
+                  : "border-transparent text-ink/72 hover:text-ink"
               }`}
             >
               {t(`tabs.${k}`)}
@@ -104,7 +104,7 @@ export default function VinosPage() {
                       </span>
                       <span
                         aria-hidden
-                        className="hidden sm:block flex-1 border-b border-dotted border-ink/20 translate-y-[-4px] min-w-[20px]"
+                        className="hidden sm:block flex-1 border-b border-dotted border-ink/35 translate-y-[-4px] min-w-[20px]"
                       />
                       <span className="font-display tabular-nums text-[14px] text-ink shrink-0">
                         {fmt(it.price)}

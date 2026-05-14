@@ -39,7 +39,7 @@ export function CategoryNav({ categories }: Props) {
   return (
     <nav
       aria-label="Categorías de la carta"
-      className="sticky top-20 md:top-24 z-30 -mx-6 md:mx-0 bg-paper/95 backdrop-blur-sm border-b border-ink/10"
+      className="sticky top-20 md:top-24 z-30 -mx-6 md:mx-0 bg-paper/95 backdrop-blur-sm border-b border-ink/35"
     >
       <div className="overflow-x-auto scrollbar-hide">
         <ul className="flex gap-1 md:gap-2 px-6 md:px-0 py-3 min-w-max md:flex-wrap">
@@ -53,7 +53,7 @@ export function CategoryNav({ categories }: Props) {
                   className={`px-3.5 py-1.5 text-[10.5px] uppercase tracking-[0.2em] whitespace-nowrap transition-colors ${
                     isActive
                       ? "bg-teal-deep text-cream"
-                      : "text-ink/65 hover:text-ink"
+                      : "text-ink/80 hover:text-ink"
                   }`}
                 >
                   {t(cat)}

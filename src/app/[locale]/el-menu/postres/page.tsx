@@ -54,7 +54,7 @@ export default async function PostresPage({
             const photo = d.slug ? DISH_PHOTOS[d.slug] : undefined;
             return (
               <Reveal key={d.id} delayMs={(i % 2) * 100}>
-                <li className="flex items-center gap-5 py-5 border-b border-ink/10">
+                <li className="flex items-center gap-5 py-5 border-b border-ink/35">
                   {photo ? (
                     <div className="w-16 h-16 shrink-0 overflow-hidden ring-1 ring-gold/30">
                       <Image
@@ -81,12 +81,12 @@ export default async function PostresPage({
                       {d.name}
                     </p>
                     {d.note && (
-                      <p className="text-[12px] italic text-ink/55 mt-1">{d.note}</p>
+                      <p className="text-[12px] italic text-ink/72 mt-1">{d.note}</p>
                     )}
                   </div>
                   <span className="font-display italic tabular-nums text-[20px] text-teal-deep shrink-0">
                     {fmt(d.price)}
-                    <span className="text-[10px] text-ink/40 ml-0.5">€</span>
+                    <span className="text-[10px] text-ink/78 ml-0.5">€</span>
                   </span>
                 </li>
               </Reveal>

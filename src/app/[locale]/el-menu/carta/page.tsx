@@ -76,8 +76,8 @@ export default async function CartaPage({
             );
           })}
 
-          <section className="py-12 border-t border-ink/10">
-            <p className="text-[12.5px] italic text-ink/65 leading-relaxed text-center">
+          <section className="py-12 border-t border-ink/35">
+            <p className="text-[12.5px] italic text-ink/80 leading-relaxed text-center">
               {tNotes("saucesLine")}
             </p>
             <ul className="mt-8 max-w-xl mx-auto divide-y divide-ink/5">

@@ -60,7 +60,7 @@ export function MenuRow({ dish, showHalf = false, perKg = false }: Props) {
           )}
         </div>
         {dish.note && (
-          <p className="text-[12px] italic text-ink/55 mt-0.5">{dish.note}</p>
+          <p className="text-[12px] italic text-ink/72 mt-0.5">{dish.note}</p>
         )}
         {dish.allergens && dish.allergens.length > 0 && (
           <div className="md:hidden mt-1.5 flex items-center gap-1">
@@ -73,18 +73,18 @@ export function MenuRow({ dish, showHalf = false, perKg = false }: Props) {
 
       <span
         aria-hidden
-        className="hidden sm:block flex-1 mx-3 border-b border-dotted border-ink/25 self-center min-w-[40px]"
+        className="hidden sm:block flex-1 mx-3 border-b border-dotted border-ink/45 self-center min-w-[40px]"
       />
 
       {showHalf && (
-        <span className="font-display tabular-nums text-[15px] text-ink/70 w-16 text-right shrink-0 self-center">
+        <span className="font-display tabular-nums text-[15px] text-ink/82 w-16 text-right shrink-0 self-center">
           {dish.half !== undefined ? fmt(dish.half) : ""}
         </span>
       )}
 
       <span className="font-display tabular-nums text-[15px] md:text-[16px] text-ink w-20 text-right shrink-0 self-center">
         {priceDisplay}
-        {perKg && <span className="text-[10px] text-ink/55 ml-1">€/Kg</span>}
+        {perKg && <span className="text-[10px] text-ink/72 ml-1">€/Kg</span>}
       </span>
     </li>
   );
