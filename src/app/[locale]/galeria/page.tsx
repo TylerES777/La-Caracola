@@ -6,7 +6,7 @@ import { PhotoPlaceholder } from "@/components/ui/PhotoPlaceholder";
 import { Reveal } from "@/components/ui/Reveal";
 import { SeashellGlyph } from "@/components/ui/SeashellGlyph";
 import { DISH_PHOTOS } from "@/lib/dish-photos";
-import { PHOTOS } from "@/lib/photos";
+import { PHOTOS, MEDIA } from "@/lib/photos";
 
 type Filter = "all" | "platos" | "interior" | "mariscos" | "espetos" | "mar";
 
@@ -29,7 +29,7 @@ const TILES: Tile[] = [
   { filter: "interior", src: PHOTOS.dishCorderoAzul, mood: "ceramic", aspect: "4/5", label: "Detalle sobre cerámica azul" },
   { filter: "platos", src: DISH_PHOTOS["arroz-negro"], mood: "espeto", aspect: "1/1", label: "Arroz negro" },
   { filter: "platos", src: DISH_PHOTOS["tentaculos-de-pulpo-sobre-tartufo-de-patatas"], mood: "ceramic", aspect: "4/5", label: "Tentáculos de pulpo" },
-  { filter: "espetos", src: PHOTOS.vintagePlaya, mood: "espeto", aspect: "1/1", label: "Pesca tradicional" },
+  { filter: "espetos", src: MEDIA.freshCigalas, mood: "espeto", aspect: "1/1", label: "Cigalas del día" },
   { filter: "platos", src: DISH_PHOTOS["pipirana-de-pulpo"], mood: "ceramic", aspect: "4/5", label: "Pipirana de pulpo" },
   { filter: "mariscos", src: DISH_PHOTOS["langostinos-al-pil-pil"], mood: "ceramic", aspect: "1/1", label: "Langostinos al pil-pil" },
   { filter: "platos", src: DISH_PHOTOS["arroz-a-banda"], mood: "ceramic", aspect: "16/9", label: "Arroz a banda" },

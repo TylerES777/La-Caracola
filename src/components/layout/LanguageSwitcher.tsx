@@ -15,9 +15,6 @@ const LOCALE_NAMES: Record<string, string> = {
   es: "Español",
   en: "English",
   fr: "Français",
-  de: "Deutsch",
-  nl: "Nederlands",
-  ru: "Русский",
 };
 
 export function LanguageSwitcher({ variant = "dark", align = "right" }: Props) {

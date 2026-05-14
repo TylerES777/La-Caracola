@@ -5,6 +5,7 @@ import { PREMIUM } from "@/lib/premium-photos";
 
 export function Welcome() {
   const t = useTranslations("inicio.section2");
+  const tD = useTranslations("display");
 
   return (
     <section className="relative py-32 md:py-48 overflow-hidden">
@@ -24,7 +25,7 @@ export function Welcome() {
           <div className="flex items-center gap-4 mb-20">
             <span className="font-display italic text-gold text-base">01</span>
             <span className="h-px flex-1 bg-paper/15 max-w-[180px]" />
-            <span className="caps-label text-paper/55">Bienvenidos</span>
+            <span className="caps-label text-paper/55">{tD("chapter.welcome")}</span>
           </div>
         </Reveal>
 
@@ -33,11 +34,11 @@ export function Welcome() {
           <div className="lg:col-span-7">
             <Reveal>
               <h2 className="heading-display font-display text-paper text-[clamp(2.75rem,7vw,5.5rem)]">
-                Una mesa
+                {tD("welcome.line1")}
                 <br />
-                <span className="text-gold">frente al mar</span>
+                <span className="text-gold">{tD("welcome.accent")}</span>
                 <br />
-                en Fuengirola.
+                {tD("welcome.line3")}
               </h2>
             </Reveal>
           </div>
@@ -59,9 +60,9 @@ export function Welcome() {
                 />
               </div>
               <figcaption className="mt-5 flex items-baseline justify-between">
-                <span className="caps-label text-paper/55">N°01 · La cocina</span>
+                <span className="caps-label text-paper/55">{tD("welcome.figureLabel")}</span>
                 <span className="font-display italic text-gold/80 text-sm">
-                  Paella mediterránea
+                  {tD("welcome.figureCaption")}
                 </span>
               </figcaption>
             </figure>

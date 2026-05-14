@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { Reveal } from "@/components/ui/Reveal";
 import { PHOTOS } from "@/lib/photos";
@@ -6,30 +7,14 @@ import { PREMIUM } from "@/lib/premium-photos";
 import { ArrowUpRight } from "lucide-react";
 
 const PLACES = [
-  {
-    num: "01",
-    title: "El salón",
-    body: "Amplio, decorado en azules — la luz cambia con la hora y el mar siempre está ahí.",
-    src: PHOTOS.heroDiningRoom,
-    alt: "Salón con vista al mar",
-  },
-  {
-    num: "02",
-    title: "La terraza",
-    body: "Acceso privado a la playa. Donde la sobremesa se alarga y el sol baja despacio.",
-    src: PREMIUM["hero-beach"],
-    alt: "Mar Mediterráneo",
-  },
-  {
-    num: "03",
-    title: "La bodega",
-    body: "Visible desde el comedor — botellas, cosechas, una conversación a la espera.",
-    src: PREMIUM["wine-pour"],
-    alt: "Bodega",
-  },
+  { num: "01", titleKey: "p1Title", bodyKey: "p1Body", altKey: "p1Alt", src: PHOTOS.heroDiningRoom },
+  { num: "02", titleKey: "p2Title", bodyKey: "p2Body", altKey: "p2Alt", src: PREMIUM["hero-beach"] },
+  { num: "03", titleKey: "p3Title", bodyKey: "p3Body", altKey: "p3Alt", src: PREMIUM["wine-pour"] },
 ];
 
 export function PlaceSplit() {
+  const tD = useTranslations("display");
+  const tP = useTranslations("display.place");
   return (
     <section className="relative py-32 md:py-44 bg-bg-deep overflow-hidden">
       <div className="mx-auto max-w-[1480px] px-6 md:px-12">
@@ -37,12 +22,12 @@ export function PlaceSplit() {
           <div className="flex items-center gap-4 mb-16">
             <span className="font-display italic text-gold text-base">05</span>
             <span className="h-px w-12 bg-paper/15" />
-            <span className="caps-label text-paper/55">El lugar</span>
+            <span className="caps-label text-paper/55">{tD("chapter.place")}</span>
           </div>
           <h2 className="heading-display font-display text-paper text-[clamp(2.5rem,5.5vw,4.5rem)] max-w-3xl mb-20">
-            Tres espacios,
+            {tP("title")}
             <br />
-            <span className="text-gold">la misma luz.</span>
+            <span className="text-gold">{tP("accent")}</span>
           </h2>
         </Reveal>
 
@@ -53,7 +38,7 @@ export function PlaceSplit() {
                 <div className="relative aspect-[4/5] overflow-hidden bg-bg">
                   <Image
                     src={p.src}
-                    alt={p.alt}
+                    alt={tP(p.altKey)}
                     fill
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-105"
@@ -67,10 +52,10 @@ export function PlaceSplit() {
                       N°{p.num}
                     </p>
                     <h3 className="font-display italic text-paper text-3xl md:text-4xl leading-tight mb-3">
-                      {p.title}
+                      {tP(p.titleKey)}
                     </h3>
                     <p className="text-paper/75 text-[13.5px] leading-relaxed">
-                      {p.body}
+                      {tP(p.bodyKey)}
                     </p>
                   </div>
                 </div>

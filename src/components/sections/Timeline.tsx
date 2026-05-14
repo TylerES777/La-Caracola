@@ -1,41 +1,25 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Reveal } from "@/components/ui/Reveal";
-import { PHOTOS } from "@/lib/photos";
-import { PREMIUM } from "@/lib/premium-photos";
+import { MEDIA } from "@/lib/photos";
 
 type Event = {
-  year: string;
-  title: string;
-  body: string;
+  yearKey: "year1990" | "year2021" | "yearToday";
+  titleKey: string;
+  bodyKey: string;
+  altKey: string;
   src: string;
-  alt: string;
 };
 
 const EVENTS: Event[] = [
-  {
-    year: "1990",
-    title: "La familia",
-    body: "Una familia malagueña de larga tradición gastronómica abre las puertas frente al mar. La cocina se hereda — del fuego, de la lonja, de la sobremesa.",
-    src: PHOTOS.vintagePesca,
-    alt: "Pesca tradicional · Fuengirola",
-  },
-  {
-    year: "2021",
-    title: "La renovación",
-    body: "Una nueva imagen para los espacios — más moderna, más elegante, inspirada en el azul del Mediterráneo. La carta evoluciona pero la receta no.",
-    src: PHOTOS.heroDiningRoom,
-    alt: "Comedor renovado · 2021",
-  },
-  {
-    year: "Hoy",
-    title: "Comer frente al mar",
-    body: "Cocina ininterrumpida, terraza con acceso privado a la playa, una bodega visible. La misma idea — afinada.",
-    src: PREMIUM["dish-paella"],
-    alt: "La cocina hoy",
-  },
+  { yearKey: "year1990",  titleKey: "ev1Title", bodyKey: "ev1Body", altKey: "ev1Alt", src: MEDIA.facade },
+  { yearKey: "year2021",  titleKey: "ev2Title", bodyKey: "ev2Body", altKey: "ev2Alt", src: MEDIA.diningRoomHero },
+  { yearKey: "yearToday", titleKey: "ev3Title", bodyKey: "ev3Body", altKey: "ev3Alt", src: MEDIA.terrace },
 ];
 
 export function Timeline() {
+  const tD = useTranslations("display");
+  const tTL = useTranslations("display.timeline");
   return (
     <section className="relative py-32 md:py-44 bg-bg overflow-hidden">
       <div className="mx-auto max-w-[1480px] px-6 md:px-12">
@@ -43,12 +27,12 @@ export function Timeline() {
           <div className="flex items-center gap-4 mb-16">
             <span className="font-display italic text-gold text-base">03</span>
             <span className="h-px w-12 bg-paper/15" />
-            <span className="caps-label text-paper/55">La historia</span>
+            <span className="caps-label text-paper/55">{tD("chapter.history")}</span>
           </div>
           <h2 className="heading-display font-display text-paper text-[clamp(2.5rem,5.5vw,4.5rem)] max-w-3xl mb-20">
-            Tres momentos
+            {tTL("title")}
             <br />
-            <span className="text-gold">de una misma casa.</span>
+            <span className="text-gold">{tTL("accent")}</span>
           </h2>
         </Reveal>
 
@@ -60,12 +44,12 @@ export function Timeline() {
           />
 
           {EVENTS.map((ev, i) => (
-            <Reveal key={ev.year} delayMs={i * 200}>
+            <Reveal key={ev.yearKey} delayMs={i * 200}>
               <article className="relative">
                 {/* Year + dot on rail */}
                 <div className="flex items-center gap-4 mb-8">
                   <span className="font-display italic text-paper text-[clamp(3rem,6vw,5rem)] leading-none">
-                    {ev.year}
+                    {tTL(ev.yearKey)}
                   </span>
                   <span
                     aria-hidden
@@ -76,24 +60,20 @@ export function Timeline() {
                 <div className="relative aspect-[4/5] overflow-hidden mb-7">
                   <Image
                     src={ev.src}
-                    alt={ev.alt}
+                    alt={tTL(ev.altKey)}
                     fill
                     sizes="(max-width: 1024px) 100vw, 33vw"
-                    className={
-                      i === 0
-                        ? "object-cover grayscale contrast-110"
-                        : "object-cover"
-                    }
+                    className="object-cover"
                   />
                 </div>
 
                 <p className="caps-label text-gold mb-3">
-                  Capítulo 0{i + 1}
+                  {tD("chapterNum")} 0{i + 1}
                 </p>
                 <h3 className="font-display italic text-2xl md:text-3xl text-paper mb-4">
-                  {ev.title}
+                  {tTL(ev.titleKey)}
                 </h3>
-                <p className="text-paper/70 leading-relaxed text-[14.5px]">{ev.body}</p>
+                <p className="text-paper/70 leading-relaxed text-[14.5px]">{tTL(ev.bodyKey)}</p>
               </article>
             </Reveal>
           ))}

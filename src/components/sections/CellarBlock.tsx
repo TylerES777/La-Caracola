@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Reveal } from "@/components/ui/Reveal";
 import { Link } from "@/i18n/routing";
 import { ArrowUpRight } from "lucide-react";
@@ -13,6 +14,7 @@ const PICKS = [
 ];
 
 export function CellarBlock() {
+  const tD = useTranslations("display");
   return (
     <section className="relative py-32 md:py-44 bg-bg-deep overflow-hidden">
       <div className="mx-auto max-w-[1480px] px-6 md:px-12">
@@ -23,7 +25,7 @@ export function CellarBlock() {
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
                   src={PREMIUM["wine-pour"]}
-                  alt="Copa de vino frente al mar"
+                  alt={tD("cellar.altCaption")}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
@@ -35,7 +37,7 @@ export function CellarBlock() {
               />
               <figcaption className="absolute -bottom-3 -right-3 bg-gold text-bg px-5 py-3">
                 <span className="font-display italic text-2xl leading-none">100</span>
-                <span className="caps-label ml-2">+ referencias</span>
+                <span className="caps-label ml-2">{tD("cellar.referencesLabel")}</span>
               </figcaption>
             </figure>
           </Reveal>
@@ -46,16 +48,15 @@ export function CellarBlock() {
               <div className="flex items-center gap-4 mb-6">
                 <span className="font-display italic text-gold text-base">04</span>
                 <span className="h-px w-12 bg-paper/15" />
-                <span className="caps-label text-paper/55">La bodega</span>
+                <span className="caps-label text-paper/55">{tD("chapter.cellar")}</span>
               </div>
               <h2 className="heading-display font-display text-paper text-[clamp(2.5rem,5.5vw,4.5rem)]">
-                Una bodega
+                {tD("cellar.title")}
                 <br />
-                <span className="text-gold">visible.</span>
+                <span className="text-gold">{tD("cellar.accent")}</span>
               </h2>
               <p className="mt-8 text-paper/70 leading-relaxed max-w-prose">
-                Cuidada, cambiante, con sitio para la cosecha que llega del Duero y la
-                que viene de la Champagne. Una selección rotativa, no un catálogo cerrado.
+                {tD("cellar.subline")}
               </p>
             </Reveal>
 
@@ -89,7 +90,7 @@ export function CellarBlock() {
                 href="/el-menu/vinos"
                 className="group mt-10 inline-flex items-center gap-3 text-gold text-[11px] uppercase tracking-[0.32em]"
               >
-                Ver toda la bodega
+                {tD("cellar.viewAll")}
                 <ArrowUpRight
                   className="w-4 h-4 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
                   strokeWidth={1.5}

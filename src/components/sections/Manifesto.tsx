@@ -3,6 +3,7 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function Manifesto() {
   const t = useTranslations("inicio.marLuz");
+  const tD = useTranslations("display");
 
   return (
     <section className="relative py-32 md:py-48 bg-bg overflow-hidden">
@@ -21,7 +22,7 @@ export function Manifesto() {
           <div className="flex items-center gap-4 mb-16 justify-center">
             <span className="font-display italic text-gold text-base">06</span>
             <span className="h-px w-12 bg-paper/15" />
-            <span className="caps-label text-paper/55">Manifiesto</span>
+            <span className="caps-label text-paper/55">{tD("chapter.manifesto")}</span>
           </div>
         </Reveal>
 
@@ -29,9 +30,7 @@ export function Manifesto() {
           <blockquote className="text-center">
             <p className="heading-display font-display text-paper text-[clamp(2.25rem,5vw,4.25rem)] max-w-5xl mx-auto">
               <span className="text-gold">«</span>
-              Somos mar, somos luz,
-              <br />
-              somos sabor mediterráneo.
+              {" "}{t("title")}{" "}
               <span className="text-gold">»</span>
             </p>
           </blockquote>

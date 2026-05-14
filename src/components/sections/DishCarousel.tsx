@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useRef } from "react";
+import { useTranslations } from "next-intl";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { DISH_PHOTOS } from "@/lib/dish-photos";
 import { PREMIUM } from "@/lib/premium-photos";
@@ -29,6 +30,7 @@ const DISHES: FeaturedDish[] = [
 
 export function DishCarousel() {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const tD = useTranslations("display");
 
   const scroll = (dir: "left" | "right") => {
     const el = scrollRef.current;
@@ -45,10 +47,10 @@ export function DishCarousel() {
             <div className="flex items-center gap-4 mb-6">
               <span className="font-display italic text-gold text-base">02</span>
               <span className="h-px w-12 bg-paper/15" />
-              <span className="caps-label text-paper/55">La carta · Selección</span>
+              <span className="caps-label text-paper/55">{tD("chapter.menu")}</span>
             </div>
             <h2 className="heading-display font-display text-paper text-[clamp(2.5rem,5.5vw,4.5rem)]">
-              Hoy en la carta.
+              {tD("dishCarousel.title")}
             </h2>
           </Reveal>
 

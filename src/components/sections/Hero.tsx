@@ -7,6 +7,7 @@ import { PHOTOS } from "@/lib/photos";
 export function Hero() {
   const t = useTranslations("hero");
   const tCta = useTranslations("cta");
+  const tD = useTranslations("display");
 
   return (
     <section
@@ -53,7 +54,7 @@ export function Hero() {
       {/* Left vertical rail — coordinates */}
       <div className="absolute left-6 inset-y-0 hidden md:flex flex-col justify-between py-24 z-10 pointer-events-none">
         <span className="text-vertical caps-label text-paper/55">
-          Fuengirola · Málaga · ESP
+          {tD("coords")}
         </span>
         <div className="flex flex-col items-center gap-2 text-paper/45">
           <span className="font-display italic text-sm">36°32′N</span>
@@ -69,7 +70,7 @@ export function Hero() {
           <span className="h-8 w-px bg-paper/25" />
         </div>
         <span className="text-vertical caps-label text-paper/55">
-          Est. 1990 · Renovado MMXXI
+          {tD("estLine")}
         </span>
       </div>
 
@@ -86,12 +87,12 @@ export function Hero() {
 
           {/* Display headline — staircased */}
           <h1 className="heading-display font-display text-paper">
-            <span className="block text-[clamp(3.25rem,12vw,11rem)]">Comer</span>
+            <span className="block text-[clamp(3.25rem,12vw,11rem)]">{tD("hero.line1")}</span>
             <span className="block text-[clamp(3.25rem,12vw,11rem)] pl-[10vw] md:pl-[16vw]">
-              frente
+              {tD("hero.line2")}
             </span>
             <span className="block text-[clamp(3.25rem,12vw,11rem)] pl-[3vw]">
-              al <span className="text-gold">mar.</span>
+              {tD("hero.line3pre")}<span className="text-gold">{tD("hero.line3accent")}</span>
             </span>
           </h1>
 
@@ -132,7 +133,7 @@ export function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-3 text-paper/60 z-10"
       >
         <span className="text-[9px] uppercase tracking-[0.45em] animate-pulse-soft">
-          Scroll
+          {tD("scroll")}
         </span>
         <ArrowDown className="h-3.5 w-3.5 text-gold animate-pulse-soft" strokeWidth={1.2} />
       </div>

@@ -11,8 +11,8 @@ export const RESTAURANT = {
   hours: "L–D · 12:00 h – 23:30 h",
   hoursShort: "L–D 12:00–23:30",
   social: {
-    facebook: "https://www.facebook.com/restaurantelacaracola",
-    instagram: "https://www.instagram.com/restaurantelacaracola",
+    facebook: "https://www.facebook.com/restaurantechiringuitolacaracola",
+    instagram: "https://www.instagram.com/lacaracola_restaurante",
   },
 } as const;
 
@@ -25,11 +25,9 @@ export const NAV_ITEMS = [
   { key: "contacto", href: "/contacto" },
 ] as const;
 
+// Matches the language selector on the real restaurantelacaracola.com — ES / EN / FR only.
 export const LOCALE_LABELS: Record<string, string> = {
   es: "ES",
   en: "EN",
   fr: "FR",
-  de: "DE",
-  nl: "NL",
-  ru: "RU",
 };

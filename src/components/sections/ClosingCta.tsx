@@ -1,10 +1,12 @@
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { PREMIUM } from "@/lib/premium-photos";
 import { Reveal } from "@/components/ui/Reveal";
 import { ArrowRight } from "lucide-react";
 
 export function ClosingCta() {
+  const tD = useTranslations("display");
   return (
     <section className="relative min-h-[88svh] flex items-center overflow-hidden bg-bg-deep">
       <div className="absolute inset-0">
@@ -31,23 +33,22 @@ export function ClosingCta() {
           <div className="flex items-center gap-4 mb-8">
             <span className="font-display italic text-gold text-base">07</span>
             <span className="h-px w-12 bg-paper/30" />
-            <span className="caps-label text-gold">Reservas · Diariamente</span>
+            <span className="caps-label text-gold">{tD("chapter.reservas")}</span>
           </div>
           <h2 className="heading-display font-display text-paper text-[clamp(3rem,9vw,8.5rem)] max-w-5xl">
-            Su mesa,
+            {tD("closing.line1")}
             <br />
-            <span className="text-gold">frente al mar.</span>
+            <span className="text-gold">{tD("closing.accent")}</span>
           </h2>
           <p className="mt-10 max-w-xl text-paper/80 text-lg leading-relaxed">
-            Almuerzos antes de las 13:30 h. Cenas antes de las 21:00 h. Cocina ininterrumpida —
-            pase cuando quiera, le esperamos.
+            {tD("closing.subline")}
           </p>
           <div className="mt-12 flex flex-wrap items-center gap-4">
             <Link
               href="/reservas"
               className="group inline-flex items-center gap-3 px-10 py-4 bg-gold text-bg text-[11px] uppercase tracking-[0.32em] hover:bg-gold-pale transition-colors duration-300"
             >
-              Reservar una mesa
+              {tD("closing.reservar")}
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" strokeWidth={1.5} />
             </Link>
             <a

@@ -372,5 +372,94 @@
   "floatingActions": {
     "reservar": "¡Reserva!",
     "ubicacion": "Ubicación"
+  },
+  "display": {
+    "chapter": {
+      "welcome": "Bienvenidos",
+      "history": "La historia",
+      "menu": "La carta · Selección",
+      "place": "El lugar",
+      "cellar": "La bodega",
+      "manifesto": "Manifiesto",
+      "reservas": "Reservas · Diariamente"
+    },
+    "scroll": "Desplazar",
+    "coords": "Fuengirola · Málaga · ESP",
+    "estLine": "Est. 1990 · Renovado MMXXI",
+    "chapterNum": "Capítulo",
+    "hero": {
+      "line1": "Comer",
+      "line2": "frente",
+      "line3pre": "al ",
+      "line3accent": "mar."
+    },
+    "welcome": {
+      "line1": "Una mesa",
+      "accent": "frente al mar",
+      "line3": "en Fuengirola.",
+      "figureLabel": "N°01 · La cocina",
+      "figureCaption": "Paella mediterránea"
+    },
+    "dishCarousel": {
+      "title": "Hoy en la carta."
+    },
+    "mediterranean": {
+      "line1pre": "Cocina ",
+      "line1accent": "Mediterránea",
+      "line2": "frente al mar."
+    },
+    "timeline": {
+      "title": "Tres momentos",
+      "accent": "de una misma casa.",
+      "year1990": "1990",
+      "year2021": "2021",
+      "yearToday": "Hoy",
+      "ev1Title": "La familia",
+      "ev1Body": "Una familia malagueña de larga tradición gastronómica abre las puertas frente al mar. La cocina se hereda — del fuego, de la lonja, de la sobremesa.",
+      "ev1Alt": "Restaurante La Caracola · fachada",
+      "ev2Title": "La renovación",
+      "ev2Body": "Una nueva imagen para los espacios — más moderna, más elegante, inspirada en el azul del Mediterráneo. La carta evoluciona pero la receta no.",
+      "ev2Alt": "Comedor renovado · 2021",
+      "ev3Title": "Comer frente al mar",
+      "ev3Body": "Cocina ininterrumpida, terraza con acceso privado a la playa, una bodega visible. La misma idea — afinada.",
+      "ev3Alt": "Terraza con acceso a la playa"
+    },
+    "closing": {
+      "line1": "Su mesa,",
+      "accent": "frente al mar.",
+      "subline": "Almuerzos antes de las 13:30 h. Cenas antes de las 21:00 h. Cocina ininterrumpida — pase cuando quiera, le esperamos.",
+      "reservar": "Reservar una mesa"
+    },
+    "cellar": {
+      "title": "Una bodega",
+      "accent": "visible.",
+      "subline": "Cuidada, cambiante, con sitio para la cosecha que llega del Duero y la que viene de la Champagne. Una selección rotativa, no un catálogo cerrado.",
+      "referencesLabel": "+ referencias",
+      "viewAll": "Ver toda la bodega",
+      "altCaption": "Copa de vino frente al mar"
+    },
+    "manifesto": {
+      "title": "Nuestro",
+      "accent": "manifiesto."
+    },
+    "place": {
+      "title": "Tres espacios,",
+      "accent": "la misma luz.",
+      "subline": "Paseo Marítimo · acceso privado a la playa · vistas al horizonte.",
+      "viewGallery": "Ver la galería completa",
+      "p1Title": "El salón",
+      "p1Body": "Amplio, decorado en azules — la luz cambia con la hora y el mar siempre está ahí.",
+      "p1Alt": "Salón con vista al mar",
+      "p2Title": "La terraza",
+      "p2Body": "Acceso privado a la playa. Donde la sobremesa se alarga y el sol baja despacio.",
+      "p2Alt": "Mar Mediterráneo",
+      "p3Title": "La bodega",
+      "p3Body": "Visible desde el comedor — botellas, cosechas, una conversación a la espera.",
+      "p3Alt": "Bodega"
+    }
+  },
+  "meta": {
+    "title": "La Caracola · Comer frente al mar en Fuengirola",
+    "description": "Restaurante La Caracola — cocina mediterránea, pescados al espeto y mariscos frescos del día en el Paseo Marítimo de Fuengirola."
   }
 }

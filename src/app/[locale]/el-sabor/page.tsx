@@ -5,7 +5,7 @@ import { Reveal } from "@/components/ui/Reveal";
 import { Chapter } from "@/components/ui/Chapter";
 import { SeashellGlyph } from "@/components/ui/SeashellGlyph";
 import { Link } from "@/i18n/routing";
-import { PHOTOS } from "@/lib/photos";
+import { PHOTOS, MEDIA } from "@/lib/photos";
 import { DISH_PHOTOS } from "@/lib/dish-photos";
 import { ArrowRight } from "lucide-react";
 
@@ -98,9 +98,8 @@ export default async function ElSaborPage({
               <PhotoPlaceholder
                 mood="espeto"
                 aspect="4/5"
-                src={PHOTOS.vintagePesca}
-                vintage
-                label="Pesca tradicional · Fuengirola"
+                src={MEDIA.facade}
+                label="Restaurante La Caracola · Fuengirola"
               />
               <span
                 aria-hidden

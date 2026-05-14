@@ -6,6 +6,7 @@ import { PHOTOS } from "@/lib/photos";
 
 export function MediterraneanBlock() {
   const t = useTranslations("inicio.section3");
+  const tD = useTranslations("display");
 
   return (
     <section className="relative py-28 md:py-36 bg-teal-night text-cream overflow-hidden">
@@ -28,9 +29,9 @@ export function MediterraneanBlock() {
             </Reveal>
             <Reveal delayMs={200}>
               <h2 className="mt-10 font-display italic text-[clamp(2.75rem,5.5vw,4.5rem)] leading-[0.95] text-cream">
-                Cocina <span className="text-gold">Mediterránea</span>
+                {tD("mediterranean.line1pre")}<span className="text-gold">{tD("mediterranean.line1accent")}</span>
                 <br />
-                <span className="pl-12 md:pl-24">frente al mar.</span>
+                <span className="pl-12 md:pl-24">{tD("mediterranean.line2")}</span>
               </h2>
             </Reveal>
             <Reveal delayMs={400}>

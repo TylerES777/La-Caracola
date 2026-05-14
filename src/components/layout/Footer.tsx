@@ -15,6 +15,7 @@ import { EU_LOGOS } from "@/lib/photos";
 export function Footer() {
   const t = useTranslations("footer");
   const tNav = useTranslations("nav");
+  const tCta = useTranslations("cta");
   const year = new Date().getFullYear();
 
   return (
@@ -43,13 +44,13 @@ export function Footer() {
               />
             </Link>
             <p className="heading-display font-display text-paper text-[clamp(2.5rem,6vw,5rem)]">
-              <span className="text-gold">«</span>Comer frente al mar<span className="text-gold">.»</span>
+              <span className="text-gold">«</span>{t("tagline").replace(/\.$/, "")}<span className="text-gold">.»</span>
             </p>
             <Link
               href="/reservas"
               className="group mt-12 inline-flex items-center gap-3 px-10 py-4 bg-gold text-bg text-[11px] uppercase tracking-[0.32em] hover:bg-gold-pale transition-colors"
             >
-              Reservar una mesa
+              {tCta("reservarMesa")}
               <ArrowUpRight
                 className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                 strokeWidth={1.5}

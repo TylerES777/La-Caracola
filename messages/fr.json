@@ -1,3 +1,465 @@
 {
-  "_TODO": "FR translations pending — falls back to ES via i18n/request.ts merge."
+  "nav": {
+    "inicio": "Accueil",
+    "elSabor": "La Saveur",
+    "elMenu": "La Carte",
+    "reservas": "Réservations",
+    "contacto": "Contact",
+    "galeria": "Galerie",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "cta": {
+    "reservar": "Réserver",
+    "reservarMesa": "Réserver une table",
+    "verCarta": "Voir la carte",
+    "verMenu": "Voir la carte",
+    "ubicacion": "Adresse",
+    "llamar": "Appeler"
+  },
+  "utility": {
+    "address": "Paseo Marítimo Rey de España, parc 9 · Fuengirola · Málaga",
+    "phone": "+34 952 584 687",
+    "hours": "Lun–Dim : 12h00 – 23h30"
+  },
+  "language": {
+    "label": "Langue"
+  },
+  "comingSoon": {
+    "line": "En construction · Cette section sera conçue lors du prochain passage."
+  },
+  "hero": {
+    "eyebrow": "Restaurante La Caracola · Fuengirola",
+    "title": "Manger face à la mer.",
+    "subhead": "Cuisine méditerranéenne, poissons à l'espeto et fruits de mer du jour — depuis 2021 avec un nouveau visage.",
+    "imageAlt": "Vue de la salle de La Caracola face à la Méditerranée au coucher du soleil",
+    "imagePlaceholder": "Salle avec vue mer"
+  },
+  "inicio": {
+    "section2": {
+      "eyebrow": "Manger face à la mer à Fuengirola",
+      "title": "Vivez une nouvelle expérience à La Caracola",
+      "body1": "L'année 2021 nous a apporté une grande rénovation qui a donné une nouvelle image au restaurant. Le nouveau design offre à tous les espaces une vision plus moderne et plus élégante, inspirée par la Méditerranée, avec une symbolique simple et reconnaissable qui rappelle le caractère naturel et frais de la mer.",
+      "body2": "Une vaste salle décorée avec un soin exquis vous fera plonger dans le bleu de la mer, où vous dégusterez une cuisine renouvelée et marquante. La terrasse, avec vue et accès privé à la plage, apporte cette touche où la lumière et la saveur se rejoignent dans une nouvelle carte qui marie recettes méditerranéennes traditionnelles et techniques d'avant-garde."
+    },
+    "section3": {
+      "eyebrow": "Le restaurant de plage à Fuengirola où l'on aimerait aller manger.",
+      "title": "Cuisine méditerranéenne face à la mer",
+      "body1": "Situé sur le Paseo Marítimo, LA CARACOLA est la somme de toute l'équipe du restaurant. C'est pour cela que l'on dit que notre maison a une âme.",
+      "body2": "L'âme de celles et ceux qui, jour après jour, pensent que chaque assiette est une expérience unique — sachant que la saveur naît de la combinaison harmonieuse des meilleurs produits."
+    },
+    "essence": {
+      "display": "L'âme",
+      "subhead": "Quand le professionnalisme rejoint l'effort et l'enthousiasme."
+    },
+    "editorial": {
+      "title": "La Caracola, le restaurant de plage où déjeuner à Fuengirola",
+      "body": "La beauté de RESTAURANTE LA CARACOLA réside dans le goût, dans des années de travail et dans l'effort pour atteindre un résultat bien fait."
+    },
+    "heritage": {
+      "eyebrow": "Tradition andalouse · mer & rivage"
+    },
+    "marLuz": {
+      "title": "Nous sommes mer, nous sommes lumière, nous sommes saveur méditerranéenne",
+      "bodyLeft": "Dans les années 90, une famille malaguène à la longue tradition gastronomique s'engage dans un nouveau concept de cuisine, à apprécier avec les cinq sens. Une équipe professionnelle, présente depuis le début de cette belle aventure, a su capter l'esprit de ceux qui aiment leur métier et qui croient que chaque recette porte la sensibilité de son auteur.",
+      "bodyRight1": "Nous créons des expériences uniques aux saveurs singulières. Nous savons que dans une assiette tout compte : le cadre, la lumière, le vin qui l'accompagne, la vue et la compagnie.",
+      "bodyRight2": "LA CARACOLA poursuivra son objectif : devenir une référence de la gastronomie à Fuengirola — un endroit charmant pour venir en famille ou entre amis."
+    },
+    "pillars": {
+      "title": "Tradition, fraîcheur, détail, harmonie et perfection",
+      "body": "Voilà LA CARACOLA — et tout mérite d'être vécu dans un cadre merveilleux et inégalé. Lumière, saveur et brise marine sont les ingrédients d'une cuisine moderne et le décor d'une ambiance unique à Fuengirola."
+    },
+    "sister": {
+      "eyebrow": "Si vous préférez, retrouvez-nous aussi dans notre restaurant frère :",
+      "name": "Restaurante Marisquería La Carihuela Chica",
+      "body": "Au Restaurante Marisquería La Carihuela Chica, vous savourerez aussi une excellente cuisine en famille ou entre amis. Une vue imprenable sur la plage de Los Boliches et la grande qualité de ses poissons, riz, fruits de mer et viandes en font une autre adresse incontournable de la cuisine andalouse.",
+      "openLine": "Ouvert tous les jours · 09h00 – 24h00",
+      "address": "Plaza de San Rafael · Edf. Don Alberto · 29640 Los Boliches · Fuengirola · Málaga",
+      "visit": "Voir le site"
+    }
+  },
+  "menu": {
+    "hub": {
+      "scriptDisplay": "La saveur",
+      "subhead": "Des produits de premier choix dans un cadre unique",
+      "title": "La carte : gastronomique, traditionnelle",
+      "body": "Notre cuisine ouverte en continu donne à chaque plat quelque chose de singulier et un parcours différent — une carte qui offre une expérience gastronomique unique. Voici notre proposition.",
+      "categories": {
+        "carta": "À la carte · Menu",
+        "postres": "Desserts",
+        "cocteles": "Cocktails · Smoothies",
+        "vinos": "Vins & Boissons"
+      },
+      "muchoGustoTitle": "Avec grand plaisir",
+      "muchoGustoBody": "Recette moderne ou tradition revisitée, RESTAURANTE LA CARACOLA a choisi une cuisine sincère — une carte bâtie sur des produits de la meilleure qualité, où les saveurs s'unissent en harmonie. Vous serez, nous en sommes sûrs, agréablement surpris. Voici quelques incontournables à goûter…",
+      "filters": {
+        "all": "Tout",
+        "entrantes": "Entrées",
+        "pescados": "Poissons",
+        "mariscos": "Fruits de mer",
+        "arroces": "Riz · Cazuelas",
+        "postres": "Desserts",
+        "cocteles": "Cocktails"
+      }
+    },
+    "carta": {
+      "eyebrow": "La Caracola · Carte",
+      "title": "La Carte",
+      "subhead": "Cuisine méditerranéenne de marché · Service continu",
+      "categories": {
+        "ensaladas": "Salades",
+        "entradas": "Entrées",
+        "sopas": "Soupes",
+        "arroces": "Riz",
+        "pescaitos": "Petits poissons frits",
+        "mariscos": "Fruits de mer",
+        "mariscosPeso": "Fruits de mer au poids",
+        "especialidades": "Spécialités · Poisson à l'espeto",
+        "pescados": "Poissons",
+        "carnes": "Viandes",
+        "extras": "Sauces & pains"
+      },
+      "notes": {
+        "arrocesPerPerson": "Minimum 2 personnes · prix par personne",
+        "mariscosPesoNote": "Prix au poids, selon disponibilité du jour.",
+        "especialidadesNote": "Poissons frais du jour, vendus au poids. Disponibilité selon arrivage.",
+        "saucesLine": "Sauce au choix : Poivre · Champignons · Béarnaise — 3,00 · Ketchup · Mayonnaise · Aïoli — 1,00",
+        "halfHeader": "½",
+        "priceHeader": "Prix",
+        "perKgHeader": "€/kg"
+      },
+      "allergens": {
+        "title": "Allergènes",
+        "intro": "L'information sur les allergènes est disponible en salle. Demandez-la à notre équipe.",
+        "labels": {
+          "gluten": "Gluten",
+          "crustaceos": "Crustacés",
+          "huevos": "Œufs",
+          "pescado": "Poisson",
+          "cacahuetes": "Arachides",
+          "soja": "Soja",
+          "lacteos": "Lactose",
+          "frutosCascara": "Fruits à coque",
+          "apio": "Céleri",
+          "mostaza": "Moutarde",
+          "sesamo": "Sésame",
+          "sulfitos": "Sulfites",
+          "altramuces": "Lupin",
+          "moluscos": "Mollusques"
+        }
+      }
+    },
+    "postres": {
+      "scriptTitle": "Desserts maison",
+      "subtitle": "Faits maison",
+      "intro": "Préparés en maison, chaque jour — avec le temps qu'il faut.",
+      "priceLabel": "Prix"
+    },
+    "cocteles": {
+      "scriptTitle": "Carte des cocktails",
+      "subtitle": "Bar · Mixologie d'auteur",
+      "intro": "Une sélection courte et bien exécutée. Sans raccourcis.",
+      "tabs": {
+        "classics": "Cocktails",
+        "alcoholFree": "Sans alcool",
+        "smoothies": "Smoothies"
+      },
+      "priceLine": "Cocktails · 10 € · Sans alcool · 10 € · Smoothies · 9 €"
+    },
+    "vinos": {
+      "eyebrow": "La cave",
+      "scriptTitle": "Vins & Boissons",
+      "intro": "Une cave visible et soignée, où le vin trouve sa place. Sélection tournante de DOs espagnoles, champagnes français et références internationales.",
+      "tabs": {
+        "tintos": "Rouges",
+        "blancos": "Blancs",
+        "rosados": "Rosés",
+        "cavas": "Cavas",
+        "champagnes": "Champagnes",
+        "bebidas": "Boissons · Bar"
+      },
+      "columns": {
+        "name": "Vin",
+        "copa": "Verre",
+        "half": "½",
+        "bottle": "Bouteille"
+      },
+      "houseTag": "Vin de la maison",
+      "noPrice": "—"
+    }
+  },
+  "reservas": {
+    "hero": {
+      "script": "Réservez une table",
+      "subline": "Déjeuner : avant 13h30 · Dîner : avant 21h00 · Ouvert du lundi au dimanche · Cuisine non-stop"
+    },
+    "form": {
+      "date": "Date",
+      "time": "Heure",
+      "personas": "Convives",
+      "personasOption": "{n, plural, =1 {1 convive} other {# convives}}",
+      "personasMore": "Plus de 8 — appelez-nous",
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Téléphone",
+      "comments": "Commentaires (allergies, occasion, préférence de table)",
+      "gdpr": "J'ai lu et j'accepte la Politique de Confidentialité et autorise le traitement de mes données pour la gestion de cette réservation.",
+      "submit": "Réserver",
+      "selectDate": "Choisissez une date",
+      "selectTime": "Choisissez une heure",
+      "noSlot": "Pas de disponibilité — inscrivez-vous en liste d'attente.",
+      "successTitle": "Réservation envoyée",
+      "successBody": "Vous recevrez une confirmation par email sous 1 heure. Pour modifier votre demande, appelez-nous au +34 952 584 687.",
+      "lunch": "Déjeuner",
+      "dinner": "Dîner"
+    },
+    "info": {
+      "title": "À savoir",
+      "items": {
+        "confirm": "Confirmation : par email sous 1 heure.",
+        "puntualidad": "Ponctualité : 15 min de courtoisie.",
+        "antelacion": "Réservez 24 h à l'avance, surtout les week-ends.",
+        "grupos": "Grands groupes (8+) : appelez-nous au +34 952 584 687.",
+        "cancel": "Annulations : par email ou téléphone avec 24 h de préavis."
+      }
+    },
+    "phoneCard": {
+      "title": "Vous préférez réserver par téléphone ?",
+      "body": "Notre équipe vous prendra en charge personnellement.",
+      "cta": "+34 952 584 687",
+      "secondary": "Voir les horaires et l'adresse"
+    }
+  },
+  "elSabor": {
+    "hero": {
+      "script": "L'âme",
+      "subhead": "Quand le professionnalisme rejoint l'effort et l'enthousiasme."
+    },
+    "experience": {
+      "eyebrow": "Face à la mer, en famille",
+      "title": "Une expérience au-delà de la gastronomie",
+      "body": "Bienvenue dans notre restaurant — un cadre idyllique face à la plage, où notre équipe œuvre chaque jour pour vous offrir le meilleur de notre cuisine avec un service chaleureux et familial."
+    },
+    "heritage": {
+      "eyebrow": "Famille · années 90",
+      "title": "Nous sommes mer, nous sommes lumière, nous sommes saveur méditerranéenne",
+      "body": "Dans les années 90, une famille malaguène à la longue tradition gastronomique s'engage dans un nouveau concept de cuisine, à apprécier avec les cinq sens. Une équipe professionnelle, présente depuis le début de cette belle aventure, a su capter l'esprit de ceux qui aiment leur métier et qui croient que chaque recette porte la sensibilité de son auteur."
+    },
+    "renovation": {
+      "eyebrow": "2021 · Rénovation",
+      "title": "Un nouveau regard en 2021",
+      "body": "Le nouveau design a offert à tous les espaces une vision plus moderne et plus élégante, inspirée par la Méditerranée, avec une symbolique simple et reconnaissable qui rappelle le caractère naturel et frais de la mer. Une vaste salle, une terrasse avec vue et accès privé à la plage, et une cave visible où le vin trouve sa place."
+    },
+    "pillars": {
+      "title": "Cinq mots qui nous définissent",
+      "items": {
+        "tradicion": {
+          "title": "Tradition",
+          "body": "Des recettes andalouses qui traversent les générations."
+        },
+        "frescura": {
+          "title": "Fraîcheur",
+          "body": "Poissons de la criée, fruits de mer du jour."
+        },
+        "detalle": {
+          "title": "Détail",
+          "body": "Du soin sur chaque assiette, sur chaque table."
+        },
+        "armonia": {
+          "title": "Harmonie",
+          "body": "Le cadre, la lumière, le vin, la compagnie."
+        },
+        "perfeccion": {
+          "title": "Perfection",
+          "body": "Le résultat d'années de travail bien fait."
+        }
+      }
+    },
+    "gallery": {
+      "title": "Le restaurant",
+      "intro": "Salle, terrasse, cave — et la mer, toujours présente."
+    },
+    "cta": {
+      "title": "Réservez votre table face à la mer",
+      "button": "Réserver une table"
+    }
+  },
+  "contacto": {
+    "hero": {
+      "script": "Contact",
+      "subline": "Ouvert tous les jours · Lun–Dim 12h00 – 23h30"
+    },
+    "info": {
+      "phone": {
+        "label": "Téléphone",
+        "value": "+34 952 584 687",
+        "note": "Appelez-nous pour réserver ou pour toute question."
+      },
+      "email": {
+        "label": "Email",
+        "value": "reservaslacaracolafuengirola@gmail.com"
+      },
+      "address": {
+        "label": "Adresse",
+        "value": "Paseo Marítimo Rey de España, parc 9 · 29640 Fuengirola · Málaga"
+      },
+      "hours": {
+        "label": "Horaires",
+        "value": "Ouvert tous les jours · 12h00 – 23h30"
+      },
+      "social": {
+        "label": "Suivez-nous",
+        "facebook": "Facebook",
+        "instagram": "Instagram"
+      }
+    },
+    "map": {
+      "label": "Comment venir"
+    },
+    "form": {
+      "title": "Une suggestion à nous faire ?",
+      "body": "Vos commentaires et votre opinion sur notre restaurant comptent beaucoup pour nous. Pour toute question, écrivez-nous — notre équipe se fera un plaisir de vous répondre.",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "message": "Message",
+      "gdpr": "J'accepte la Politique de Confidentialité et le traitement de mes données.",
+      "submit": "Envoyer",
+      "success": "Message envoyé. Nous vous répondrons dès que possible."
+    }
+  },
+  "galeria": {
+    "hero": {
+      "script": "Galerie",
+      "subline": "Salle, terrasse, cave, assiettes, mer."
+    },
+    "filters": {
+      "all": "Tout",
+      "platos": "Plats",
+      "interior": "Intérieur",
+      "mariscos": "Fruits de mer",
+      "espetos": "Espetos",
+      "mar": "Vue mer"
+    },
+    "comingPhotos": "De nouvelles photos viendront enrichir cette galerie. Pour l'instant, des cadres éditoriaux au format final."
+  },
+  "footer": {
+    "tagline": "Manger face à la mer à Fuengirola.",
+    "hours": "Lun–Dim · 12h00 – 23h30",
+    "phone": "+34 952 584 687",
+    "email": "reservaslacaracolafuengirola@gmail.com",
+    "address": "Paseo Marítimo Rey de España, parc 9 · 29640 Fuengirola · Málaga",
+    "sister": {
+      "eyebrow": "Restaurant frère",
+      "name": "Marisquería La Carihuela Chica",
+      "subline": "Los Boliches · Fuengirola · Ouvert 09h00 – 24h00",
+      "cta": "Voir le site"
+    },
+    "social": {
+      "label": "Suivez-nous",
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    },
+    "legal": {
+      "aviso": "Mentions Légales",
+      "privacidad": "Politique de Confidentialité",
+      "cookies": "Politique de Cookies"
+    },
+    "euCompliance": "La Caracola S.L. a reçu une aide de l'Union Européenne au titre du Programme Opérationnel FEDER d'Andalousie 2014-2020, financée dans le cadre de la réponse de l'Union à la pandémie de COVID-19 (REACT-UE), pour compenser le surcoût énergétique du gaz naturel et/ou de l'électricité pour les PME et indépendants particulièrement affectés par la hausse des prix de l'énergie liée à la guerre d'agression de la Russie contre l'Ukraine.",
+    "euLogosNote": "L'Andalousie avance avec l'Europe · Junta de Andalucía · Union Européenne (FEDER)",
+    "copyright": "© {year} Restaurante La Caracola. Tous droits réservés."
+  },
+  "floatingActions": {
+    "reservar": "Réserver !",
+    "ubicacion": "Adresse"
+  },
+  "display": {
+    "chapter": {
+      "welcome": "Bienvenue",
+      "history": "Notre histoire",
+      "menu": "La carte · Sélection",
+      "place": "Le lieu",
+      "cellar": "La cave",
+      "manifesto": "Manifeste",
+      "reservas": "Réservations · Tous les jours"
+    },
+    "scroll": "Défiler",
+    "coords": "Fuengirola · Málaga · ESP",
+    "estLine": "Fondé 1990 · Rénové MMXXI",
+    "chapterNum": "Chapitre",
+    "hero": {
+      "line1": "Manger",
+      "line2": "face",
+      "line3pre": "à la ",
+      "line3accent": "mer."
+    },
+    "welcome": {
+      "line1": "Une table",
+      "accent": "face à la mer",
+      "line3": "à Fuengirola.",
+      "figureLabel": "N°01 · La cuisine",
+      "figureCaption": "Paella méditerranéenne"
+    },
+    "dishCarousel": {
+      "title": "Aujourd'hui à la carte."
+    },
+    "mediterranean": {
+      "line1pre": "Cuisine ",
+      "line1accent": "méditerranéenne",
+      "line2": "face à la mer."
+    },
+    "timeline": {
+      "title": "Trois moments",
+      "accent": "d'une seule maison.",
+      "year1990": "1990",
+      "year2021": "2021",
+      "yearToday": "Aujourd'hui",
+      "ev1Title": "La famille",
+      "ev1Body": "Une famille malaguène à la longue tradition gastronomique ouvre ses portes face à la mer. La cuisine est un héritage — du feu, de la criée, des longs déjeuners.",
+      "ev1Alt": "Restaurante La Caracola · façade",
+      "ev2Title": "La rénovation",
+      "ev2Body": "Une nouvelle image pour chaque espace — plus moderne, plus élégante, inspirée par le bleu de la Méditerranée. La carte évolue ; la recette, jamais.",
+      "ev2Alt": "Salle rénovée · 2021",
+      "ev3Title": "Manger face à la mer",
+      "ev3Body": "Cuisine non-stop, terrasse avec accès privé à la plage, une cave visible. La même idée — affinée.",
+      "ev3Alt": "Terrasse avec accès à la plage"
+    },
+    "closing": {
+      "line1": "Votre table,",
+      "accent": "face à la mer.",
+      "subline": "Déjeuner avant 13h30. Dîner avant 21h00. Cuisine non-stop — venez quand vous voulez, on vous attend.",
+      "reservar": "Réserver une table"
+    },
+    "cellar": {
+      "title": "Une cave",
+      "accent": "visible.",
+      "subline": "Soignée, mouvante — avec une place pour ce qui arrive du Duero et ce qui vient de Champagne. Une sélection tournante, pas un catalogue figé.",
+      "referencesLabel": "+ références",
+      "viewAll": "Voir toute la cave",
+      "altCaption": "Verre de vin face à la mer"
+    },
+    "manifesto": {
+      "title": "Notre",
+      "accent": "manifeste."
+    },
+    "place": {
+      "title": "Trois espaces,",
+      "accent": "la même lumière.",
+      "subline": "Paseo Marítimo · accès privé à la plage · vue mer.",
+      "viewGallery": "Voir toute la galerie",
+      "p1Title": "La salle",
+      "p1Body": "Spacieuse, habillée de bleus — la lumière change avec l'heure et la mer est toujours là.",
+      "p1Alt": "Salle avec vue mer",
+      "p2Title": "La terrasse",
+      "p2Body": "Accès privé à la plage. Là où le déjeuner s'étire et où le soleil descend doucement.",
+      "p2Alt": "Mer Méditerranée",
+      "p3Title": "La cave",
+      "p3Body": "Visible depuis la salle — bouteilles, millésimes, une conversation qui attend.",
+      "p3Alt": "Cave à vin"
+    }
+  },
+  "meta": {
+    "title": "La Caracola · Manger face à la mer à Fuengirola",
+    "description": "Restaurante La Caracola — cuisine méditerranéenne, poissons à l'espeto et fruits de mer du jour sur le Paseo Marítimo de Fuengirola."
+  }
 }
