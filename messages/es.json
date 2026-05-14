@@ -100,7 +100,19 @@
         "arroces": "Arroces · Cazuelas",
         "postres": "Postres",
         "cocteles": "Cócteles"
-      }
+      },
+      "marqueeLabel": "El Menú",
+      "introEyebrow": "La propuesta",
+      "categoryBlurbs": {
+        "carta": "127 platos · Ensaladas, arroces, pescados al espeto, mariscos del día",
+        "postres": "Hechos en casa, día a día — 13 referencias artesanas",
+        "cocteles": "Bar de autor — sin atajos · €10 / €9",
+        "vinos": "Bodega visible · 100+ referencias · Tintos, blancos, champagnes"
+      },
+      "verCarta": "Ver carta",
+      "muchoGustoEyebrow": "Con mucho gusto",
+      "verCartaCompleta": "Ver la carta completa",
+      "marqueeItems": "Ensaladas · Entradas · Sopas · Arroces · Pescaítos Fritos · Mariscos · Pescado al Espeto · Pescados · Carnes · Postres · Cócteles · Vinos"
     },
     "carta": {
       "eyebrow": "La Caracola · Carta",

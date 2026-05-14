@@ -100,7 +100,19 @@
         "arroces": "Rice · Cazuelas",
         "postres": "Desserts",
         "cocteles": "Cocktails"
-      }
+      },
+      "marqueeLabel": "The Menu",
+      "introEyebrow": "The proposal",
+      "categoryBlurbs": {
+        "carta": "127 dishes · Salads, rice, fish on the espeto, shellfish of the day",
+        "postres": "Made in-house, every day — 13 artisanal selections",
+        "cocteles": "Signature bar — no shortcuts · €10 / €9",
+        "vinos": "A visible cellar · 100+ references · Reds, whites, champagnes"
+      },
+      "verCarta": "See the menu",
+      "muchoGustoEyebrow": "With great pleasure",
+      "verCartaCompleta": "See the full menu",
+      "marqueeItems": "Salads · Starters · Soups · Rice · Little Fried Fish · Shellfish · Fish on the Espeto · Fish · Meats · Desserts · Cocktails · Wines"
     },
     "carta": {
       "eyebrow": "La Caracola · Menu",

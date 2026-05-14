@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { NAV_ITEMS } from "@/lib/constants";
 import { MobileMenu } from "./MobileMenu";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header() {
   const tNav = useTranslations("nav");
@@ -77,17 +78,18 @@ export function Header() {
             ))}
           </nav>
 
-          {/* Right — single reserve CTA */}
-          <div className="hidden md:flex items-center gap-5 shrink-0">
+          {/* Right — language toggle + reserve CTA */}
+          <div className="hidden md:flex items-center gap-4 lg:gap-5 shrink-0">
+            <LanguageSwitcher variant="light" />
             <a
               href="tel:+34952584687"
-              className="text-[11px] uppercase tracking-[0.28em] text-paper/65 hover:text-gold transition-colors"
+              className="hidden lg:inline text-[11px] uppercase tracking-[0.28em] text-paper/65 hover:text-gold transition-colors"
             >
               +34 952 584 687
             </a>
             <Link
               href="/reservas"
-              className="group relative inline-flex items-center gap-2.5 px-6 py-2.5 border border-gold/40 text-gold text-[11px] uppercase tracking-[0.28em] overflow-hidden hover:text-bg transition-colors duration-500"
+              className="group relative inline-flex items-center gap-2.5 px-5 lg:px-6 py-2.5 border border-gold/40 text-gold text-[11px] uppercase tracking-[0.28em] overflow-hidden hover:text-bg transition-colors duration-500"
             >
               <span className="relative z-10">{tCta("reservar")}</span>
               <span className="relative z-10 w-1 h-1 rounded-full bg-gold group-hover:bg-bg transition-colors" />
@@ -98,14 +100,18 @@ export function Header() {
             </Link>
           </div>
 
-          <button
-            type="button"
-            className="md:hidden -mr-2 p-2 text-paper"
-            onClick={() => setMobileOpen(true)}
-            aria-label={tNav("openMenu")}
-          >
-            <Menu className="h-6 w-6" strokeWidth={1.2} />
-          </button>
+          {/* Mobile: language toggle + hamburger */}
+          <div className="md:hidden flex items-center gap-3">
+            <LanguageSwitcher variant="light" />
+            <button
+              type="button"
+              className="-mr-2 p-2 text-paper"
+              onClick={() => setMobileOpen(true)}
+              aria-label={tNav("openMenu")}
+            >
+              <Menu className="h-6 w-6" strokeWidth={1.2} />
+            </button>
+          </div>
         </div>
       </header>
 

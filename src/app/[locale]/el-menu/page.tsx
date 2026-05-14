@@ -9,35 +9,11 @@ import { DISH_PHOTOS } from "@/lib/dish-photos";
 import { PHOTOS } from "@/lib/photos";
 
 const CATEGORIES = [
-  {
-    key: "carta",
-    href: "/el-menu/carta",
-    src: DISH_PHOTOS["tartar-de-salmon-con-aguacate"],
-    numeral: "I",
-    blurb: "127 platos · Ensaladas, arroces, pescados al espeto, mariscos del día",
-  },
-  {
-    key: "postres",
-    href: "/el-menu/postres",
-    src: DISH_PHOTOS["tiramisu"],
-    numeral: "II",
-    blurb: "Hechos en casa, día a día — 13 referencias artesanas",
-  },
-  {
-    key: "cocteles",
-    href: "/el-menu/cocteles",
-    src: DISH_PHOTOS["mojito-de-fresa"],
-    numeral: "III",
-    blurb: "Bar de autor — sin atajos · €10 / €9",
-  },
-  {
-    key: "vinos",
-    href: "/el-menu/vinos",
-    src: PHOTOS.heroDiningRoom,
-    numeral: "IV",
-    blurb: "Bodega visible · 100+ referencias · Tintos, blancos, champagnes",
-  },
-];
+  { key: "carta",    href: "/el-menu/carta",    src: DISH_PHOTOS["tartar-de-salmon-con-aguacate"], numeral: "I" },
+  { key: "postres",  href: "/el-menu/postres",  src: DISH_PHOTOS["tiramisu"],                       numeral: "II" },
+  { key: "cocteles", href: "/el-menu/cocteles", src: DISH_PHOTOS["mojito-de-fresa"],                numeral: "III" },
+  { key: "vinos",    href: "/el-menu/vinos",    src: PHOTOS.heroDiningRoom,                         numeral: "IV" },
+] as const;
 
 export default async function MenuHubPage({
   params,
@@ -73,7 +49,7 @@ export default async function MenuHubPage({
         />
         <div className="relative h-full mx-auto max-w-[1320px] px-6 md:px-20 flex flex-col justify-end pb-20 animate-stagger">
           <span className="text-[11px] uppercase tracking-[0.4em] text-gold mb-6">
-            ✦ El Menú ✦
+            ✦ {t("marqueeLabel")} ✦
           </span>
           <h1 className="font-script text-[clamp(5rem,16vw,12rem)] text-gold leading-[0.8] drop-shadow-[0_4px_24px_rgba(0,0,0,0.5)]">
             {t("scriptDisplay")}
@@ -85,20 +61,7 @@ export default async function MenuHubPage({
       </section>
 
       <Marquee
-        items={[
-          "Ensaladas",
-          "Entradas",
-          "Sopas",
-          "Arroces",
-          "Pescaítos Fritos",
-          "Mariscos",
-          "Pescado al Espeto",
-          "Pescados",
-          "Carnes",
-          "Postres",
-          "Cócteles",
-          "Vinos",
-        ]}
+        items={t("marqueeItems").split(" · ")}
         tone="ink"
         separator="·"
       />
@@ -108,12 +71,12 @@ export default async function MenuHubPage({
         <div className="mx-auto max-w-3xl px-6 text-center">
           <Reveal>
             <p className="text-[10.5px] uppercase tracking-[0.32em] text-gold-deep mb-8">
-              La propuesta
+              {t("introEyebrow")}
             </p>
             <h2 className="font-display italic text-[clamp(2rem,4vw,3.25rem)] text-teal-deep leading-[1.05]">
               {t("title")}
             </h2>
-            <p className="mt-8 text-lg text-ink/75 leading-relaxed">{t("body")}</p>
+            <p className="mt-8 text-lg text-ink/85 leading-relaxed">{t("body")}</p>
           </Reveal>
         </div>
       </section>
@@ -161,11 +124,11 @@ export default async function MenuHubPage({
                     <h3 className="mt-4 font-display italic text-4xl md:text-5xl text-teal-deep leading-tight">
                       {t(`categories.${cat.key}` as never)}
                     </h3>
-                    <p className="mt-6 text-ink/70 leading-relaxed max-w-prose">
-                      {cat.blurb}
+                    <p className="mt-6 text-ink/85 leading-relaxed max-w-prose">
+                      {t(`categoryBlurbs.${cat.key}` as never)}
                     </p>
-                    <span className="mt-8 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] text-ink/65 group-hover:text-gold-deep transition-colors">
-                      Ver carta
+                    <span className="mt-8 inline-flex items-center gap-3 text-[11px] uppercase tracking-[0.32em] font-semibold text-ink group-hover:text-gold-deep transition-colors">
+                      {t("verCarta")}
                       <ArrowRight
                         className="w-4 h-4 transition-transform group-hover:translate-x-1.5"
                         strokeWidth={1.5}
@@ -186,7 +149,7 @@ export default async function MenuHubPage({
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16">
               <div className="lg:col-span-5">
                 <p className="text-[10.5px] uppercase tracking-[0.32em] text-gold mb-5">
-                  Con mucho gusto
+                  {t("muchoGustoEyebrow")}
                 </p>
                 <h3 className="font-display italic text-[clamp(2.25rem,4.5vw,3.5rem)] text-cream leading-[1.05]">
                   {t("muchoGustoTitle")}
@@ -246,7 +209,7 @@ export default async function MenuHubPage({
               href="/el-menu/carta"
               className="group inline-flex items-center gap-3 px-10 py-4 bg-gold text-ink text-[11px] uppercase tracking-[0.3em] hover:bg-gold-deep hover:text-cream transition-colors"
             >
-              Ver la carta completa
+              {t("verCartaCompleta")}
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1.5" strokeWidth={1.5} />
             </Link>
           </Reveal>

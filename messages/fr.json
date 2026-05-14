@@ -100,7 +100,19 @@
         "arroces": "Riz · Cazuelas",
         "postres": "Desserts",
         "cocteles": "Cocktails"
-      }
+      },
+      "marqueeLabel": "La Carte",
+      "introEyebrow": "La proposition",
+      "categoryBlurbs": {
+        "carta": "127 plats · Salades, riz, poissons à l'espeto, fruits de mer du jour",
+        "postres": "Faits maison, chaque jour — 13 références artisanales",
+        "cocteles": "Bar d'auteur — sans raccourcis · 10 € / 9 €",
+        "vinos": "Cave visible · 100+ références · Rouges, blancs, champagnes"
+      },
+      "verCarta": "Voir la carte",
+      "muchoGustoEyebrow": "Avec grand plaisir",
+      "verCartaCompleta": "Voir la carte complète",
+      "marqueeItems": "Salades · Entrées · Soupes · Riz · Petits poissons frits · Fruits de mer · Poisson à l'espeto · Poissons · Viandes · Desserts · Cocktails · Vins"
     },
     "carta": {
       "eyebrow": "La Caracola · Carte",
