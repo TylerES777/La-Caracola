@@ -189,13 +189,13 @@ export default async function ElSaborPage({
         </div>
       </section>
 
-      {/* Gallery */}
-      <section className="py-28 md:py-36 bg-paper-deep/40">
+      {/* Gallery — light surface so the dark editorial copy reads */}
+      <section className="py-28 md:py-36 bg-paper text-ink">
         <div className="mx-auto max-w-[1320px] px-6 md:px-20">
           <Reveal>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-14 items-end">
               <Chapter numeral="V" label={t("gallery.title")} className="lg:col-span-4" />
-              <p className="lg:col-span-7 lg:col-start-6 font-display italic text-2xl md:text-3xl text-ink/70 leading-snug">
+              <p className="lg:col-span-7 lg:col-start-6 font-display italic text-2xl md:text-3xl text-ink/85 leading-snug">
                 {t("gallery.intro")}
               </p>
             </div>
