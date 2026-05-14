@@ -473,5 +473,11 @@
   "meta": {
     "title": "La Caracola · Comer frente al mar en Fuengirola",
     "description": "Restaurante La Caracola — cocina mediterránea, pescados al espeto y mariscos frescos del día en el Paseo Marítimo de Fuengirola."
+  },
+  "stats": {
+    "founded": "Año de fundación",
+    "dishes": "Platos en carta",
+    "wines": "Vinos en bodega",
+    "metres": "Metros al mar"
   }
 }

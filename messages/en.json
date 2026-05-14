@@ -473,5 +473,11 @@
   "meta": {
     "title": "La Caracola · Dining by the sea in Fuengirola",
     "description": "Restaurante La Caracola — Mediterranean cuisine, fish on the espeto and the day's fresh shellfish on the Paseo Marítimo, Fuengirola."
+  },
+  "stats": {
+    "founded": "Founded",
+    "dishes": "Dishes on the menu",
+    "wines": "Wines in the cellar",
+    "metres": "Metres to the sea"
   }
 }
